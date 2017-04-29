@@ -1,16 +1,15 @@
-## Projeto
+## Como utilizar o projeto
 - Para iniciar o server localmente utilize `npm start`
 - Para compilar utilize `npm build`
 
-## Sobre o Dojo
+## Entendendo o problema
 Um vulcão acaba de entrar em erupção, provocando uma nuvem de cinzas que se alastra impedindo a circulação aérea. O governo está muito preocupado e deseja saber quando que a nuvem de cinzas irá atingir todos os aeroportos do país.
 
 Está disponível um mapa detalhando a situação atual. O mapa é retangular, dividido em pequenos quadrados. Neste mapa existem três tipos de quadrados: nuvem (indicando que esta região do mapa já está coberto por nuvens), aeroportos (indicando a localização de um aeroporto) e todas as outras (indicando locais onde a nuvem ainda não chegou).
 
 A cada dia, a nuvem expande-se um quadrado na horizontal e um quadrado na vertical. Ou seja, ao fim de cada dia, todos os quadrados adjacentes (vertical ou horizontalmente) a uma nuvem, também passam a conter nuvens.
 
-
-## Instruções de uso da interface
+## Instruções
 Por padrão, o simulador traz uma grade de 5 linhas e 12 colunas, mas esse é um dado que você pode alterar conforme sua necessidade.
 
 Por exemplo, se você precisa de uma grade 10x10 é só alterar no campo linha e coluna. A grade será atualizada automaticamente.
