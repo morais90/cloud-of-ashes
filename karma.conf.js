@@ -35,7 +35,6 @@ module.exports = function(config) {
     plugins: [
         'karma-webpack',
         'karma-jasmine',
-        'karma-chrome-launcher',
         'karma-phantomjs-launcher'
      ],
 
