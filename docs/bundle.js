@@ -15131,7 +15131,7 @@ var Grid = exports.Grid = function (_React$Component) {
                             _react2.default.createElement(
                                 'div',
                                 { className: 'col-xs-2' },
-                                this.state.has_next_day ? _react2.default.createElement(
+                                this.state.has_next_day && this.simulations.length ? _react2.default.createElement(
                                     'button',
                                     { className: 'btn btn-primary', onClick: this.handleNextDayClick },
                                     'Simular o pr\xF3ximo dia'
@@ -22752,7 +22752,6 @@ var GridController = function () {
                             case _grid.AIRPORT:
                                 grid[_row][_column] = _grid.CLOUD_IN_AIRPORT;
                                 break;
-                                CASE;
                         }
                     }
                 });

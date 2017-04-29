@@ -3,6 +3,7 @@
 ## Como utilizar o projeto
 - Para iniciar o server localmente utilize `npm start`
 - Para compilar utilize `npm build`
+- Para testar utilize `npm test`
 
 ## Entendendo o problema
 Um vulcão acaba de entrar em erupção, provocando uma nuvem de cinzas que se alastra impedindo a circulação aérea. O governo está muito preocupado e deseja saber quando que a nuvem de cinzas irá atingir todos os aeroportos do país.

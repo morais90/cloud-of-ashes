@@ -175,7 +175,7 @@ export class Grid extends React.Component {
                             </div>
 
                             <div className="col-xs-2">
-                                {this.state.has_next_day ? (
+                                {this.state.has_next_day && this.simulations.length ? (
                                     <button className="btn btn-primary" onClick={this.handleNextDayClick}>Simular o próximo dia</button>
                                 ) : (
                                     <button className="btn btn-primary disabled">Simular o próximo dia</button>
