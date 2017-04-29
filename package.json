@@ -1,0 +1,37 @@
+{
+  "name": "cloud-of-ashes",
+  "version": "1.0.0",
+  "description": "Cloud of Ashes",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback",
+    "build": "./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/morais90/cloud-of-ashes.git"
+  },
+  "author": "Willian de Morais <williandmorais@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "style-loader": "0.16.1",
+    "css-loader": "0.28.0",
+    "file-loader": "0.11.1",
+    "url-loader": "0.5.8",
+    "bootstrap": "3.3.7",
+    "jquery": "^3.2.1",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1"
+  }
+}
