@@ -14962,6 +14962,13 @@ var Grid = exports.Grid = function (_React$Component) {
                     var grid_copy = JSON.parse(JSON.stringify(grid));
                     this.simulations.push(grid_copy);
                 }
+                this.setState({
+                    has_next_day: true
+                });
+            } else {
+                this.setState({
+                    has_next_day: false
+                });
             }
         }
     }, {
@@ -15030,7 +15037,8 @@ var Grid = exports.Grid = function (_React$Component) {
             } else {
                 this.setState({
                     grid: display_grid,
-                    day: day
+                    day: day,
+                    has_next_day: true
                 });
             }
         }
@@ -15066,6 +15074,7 @@ var Grid = exports.Grid = function (_React$Component) {
 
             if (prevProp.rows != this.props.rows || prevProp.columns != this.props.columns) {
                 this.controller.clear();
+                this.simulations = [];
                 var grid = [];
 
                 Array(this.props.rows).fill().forEach(function (row, i) {

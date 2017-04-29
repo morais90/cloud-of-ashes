@@ -42,6 +42,13 @@ export class Grid extends React.Component {
                 let grid_copy = JSON.parse(JSON.stringify(grid))
                 this.simulations.push(grid_copy)
             }
+            this.setState({
+                has_next_day: true
+            })
+        } else {
+            this.setState({
+                has_next_day: false
+            })
         }
     }
 
@@ -103,6 +110,7 @@ export class Grid extends React.Component {
             this.setState({
                 grid: display_grid,
                 day: day,
+                has_next_day: true,
             });
         }
     }
@@ -132,6 +140,7 @@ export class Grid extends React.Component {
     componentDidUpdate(prevProp, prevState) {
         if (prevProp.rows != this.props.rows || prevProp.columns != this.props.columns) {
             this.controller.clear();
+            this.simulations = [];
             let grid = [];
 
             Array(this.props.rows).fill().forEach((row, i) => {
