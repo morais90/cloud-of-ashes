@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, './dist');
+var BUILD_DIR = path.resolve(__dirname, './docs');
 var SOURCE_DIR = path.resolve(__dirname, './src');
 
 module.exports = {
@@ -14,7 +14,7 @@ module.exports = {
         host: '0.0.0.0',
         port: 3000,
         status: {'colors': true, 'progress': true},
-        contentBase: './dist/',
+        contentBase: './docs/',
         lazy: true
     },
     module : {
