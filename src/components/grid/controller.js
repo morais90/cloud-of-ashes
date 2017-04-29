@@ -119,13 +119,11 @@ export default class GridController {
                         case AIRPORT:
                             grid[row][column] = CLOUD_IN_AIRPORT
                             break;
-                        CASE 
                     }
                 }
             })
         })
         return true;
-
     }
 
     gridIsValid(grid) {
