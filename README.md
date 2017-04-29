@@ -1,4 +1,5 @@
 # [Nuvem de Cinzas](https://morais90.github.io/cloud-of-ashes/)
+[![Build Status](https://travis-ci.org/morais90/cloud-of-ashes.svg?branch=master)](https://travis-ci.org/morais90/cloud-of-ashes)
 
 ## Como utilizar o projeto
 - Para iniciar o server localmente utilize `npm start`
